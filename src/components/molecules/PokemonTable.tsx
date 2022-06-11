@@ -43,16 +43,18 @@ const PokemonTable: React.FC<PokemonTableProps> = ({
 
   const notFoundRender = () => {
     return (
-      <td colSpan={5}>
-        <p className="not-found">Pokemon Not Found</p>
-      </td>
+      <tr>
+        <td colSpan={5}>
+          <p className="not-found">Pokemon Not Found</p>
+        </td>
+      </tr>
     );
   };
 
   return (
     <table>
       <thead>
-        <tr>
+        <tr data-testid="header-table-names">
           <th>Nombre</th>
           <th>Imagen</th>
           <th>Ataque</th>

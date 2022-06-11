@@ -33,12 +33,13 @@ const SearchBar: React.FC<SearchBarProps> = ({
 
   return (
     <div className="search-bar">
-      <label>Listado de Pokemon</label>
+      <label htmlFor="search-pokemon">Listado de Pokemon</label>
       <div className="searchInput">
         <div>
           <BiSearch />
           <input
             type="search"
+            id="search-pokemon"
             placeholder="Buscar"
             onChange={debounce(
               (event) => requestPokemon(event.target.value),
@@ -48,7 +49,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
               if (key.key === " ") return key.preventDefault();
               return key;
             }}
-          ></input>
+          />
         </div>
         <CustomizedButton
           text="Nuevo"

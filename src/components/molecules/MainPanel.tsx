@@ -47,25 +47,27 @@ const MainPanel: React.FC<MainPanelProps> = ({
         </div>
         <div className="stats">
           <div className="attack-box">
-            <label>Ataque:</label>
+            <label htmlFor="attack">Ataque:</label>
             <div className="attack-bar">
               <span>0</span>
               <input
+                id="attack"
                 type="range"
                 min="0"
                 max="100"
                 step="1"
                 defaultValue={attack}
                 onChange={(e) => setAttack(e.target.value)}
-              ></input>
+              />
               <span>100</span>
             </div>
           </div>
           <div className="defense-box">
-            <label>Defensa:</label>
+            <label htmlFor="defense">Defensa:</label>
             <div className="defense-bar">
               <span>0</span>
               <input
+                id="defense"
                 type="range"
                 min="0"
                 max="100"

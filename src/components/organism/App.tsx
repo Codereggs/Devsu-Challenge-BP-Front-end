@@ -45,7 +45,7 @@ function App() {
               showEdit={setShowEdit}
               setReload={setReload}
             />
-            <div className="quantity">
+            <div className="quantity" data-testid="quantity">
               Cantidad de Pokemons: {quantityOfPokemons}
             </div>
           </>
