@@ -1,15 +1,13 @@
-import { SearchBarProps } from "@src/features/interfaces/pokemons.interface";
+import debounce from "lodash/debounce";
+
 import { AiOutlinePlus } from "react-icons/ai";
 import { BiSearch } from "react-icons/bi";
-import CustomizedButton from "./CustomizedButton";
-import debounce from "lodash/debounce";
-import { getPokemons } from "../../features/request/service";
 
-const SearchBar: React.FC<SearchBarProps> = ({
-  showEdit,
-  setPokemonList,
-  setReload,
-}) => {
+import { SearchBarProps } from "@src/features/interfaces/pokemons.interface";
+import { getPokemons } from "@src/features/request/service";
+import CustomizedButton from "./CustomizedButton";
+
+const SearchBar: React.FC<SearchBarProps> = ({ showEdit, setPokemonList }) => {
   const requestPokemon = (id: string) => {
     if (/^[\d]{4}$/gi.test(id)) {
       getPokemons(id).then((response) => {

@@ -1,9 +1,11 @@
-import { useEffect, useState } from "react";
 import "../../assets/App.css";
-import SearchBar from "../atoms/SearchBar";
-import MainPanel from "../molecules/MainPanel";
-import PokemonTable from "../molecules/PokemonTable";
-import { getPokemons, getQuantity } from "../../features/request/service";
+
+import { useEffect, useState } from "react";
+
+import { getPokemons, getQuantity } from "@src/features/request/service";
+import SearchBar from "@components/atoms/SearchBar";
+import PokemonTable from "@components/molecules/PokemonTable";
+import MainPanel from "@components/molecules/MainPanel";
 
 function App() {
   const [pokemonList, setPokemonList] = useState<any>([]);
@@ -31,11 +33,7 @@ function App() {
   return (
     <div className="app">
       <div>
-        <SearchBar
-          showEdit={setShowEdit}
-          setPokemonList={setPokemonList}
-          setReload={setReload}
-        />
+        <SearchBar showEdit={setShowEdit} setPokemonList={setPokemonList} />
       </div>
       <div>
         {!showEdit?.show && (

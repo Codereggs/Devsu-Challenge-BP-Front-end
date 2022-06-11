@@ -1,8 +1,10 @@
-import { MainPanelProps } from "../../features/interfaces/pokemons.interface";
-import { savePokemon, updatePokemon } from "../../features/request/service";
 import { useState } from "react";
+
+import { MainPanelProps } from "@src/features/interfaces/pokemons.interface";
+import CustomizedButton from "@src/components/atoms/CustomizedButton";
+import { savePokemon, updatePokemon } from "@src/features/request/service";
+
 import { AiOutlineClose, AiOutlineSave } from "react-icons/ai";
-import CustomizedButton from "../atoms/CustomizedButton";
 
 const MainPanel: React.FC<MainPanelProps> = ({
   showEdit,
@@ -74,7 +76,7 @@ const MainPanel: React.FC<MainPanelProps> = ({
                 step="1"
                 defaultValue={defense}
                 onChange={(e) => setDefense(e.target.value)}
-              ></input>
+              />
               <span>100</span>
             </div>
           </div>

@@ -23,7 +23,8 @@
       "@molecules/*": ["src/components/molecules/*"],
       "@organism/*": ["src/components/organism/*"],
       "@test/*": ["src/test/*"],
-      "@assets/*": ["src/assets/*"]
+      "@assets/*": ["src/assets/*"],
+      "@features/*": ["src/features/*"]
     }
   },
   "include": ["src"]

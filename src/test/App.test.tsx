@@ -1,7 +1,7 @@
 import { countPokemons, searchById, tableInfo } from "../mocks/mockFetch";
 import { fireEvent, render, screen } from "@testing-library/react";
 import axios from "axios";
-import App from "../components/organism/App";
+import App from "@components/organism/App";
 
 it("renders without crashing", () => {
   render(<App />);

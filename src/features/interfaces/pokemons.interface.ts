@@ -1,5 +1,3 @@
-import React from "react";
-
 export interface Pokemons {
   id: number;
   name: string;
@@ -21,7 +19,6 @@ export interface SearchBarProps {
     }>
   >;
   setPokemonList: React.Dispatch<React.SetStateAction<never[] | any[]>>;
-  setReload: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export interface PokemonTableProps {
