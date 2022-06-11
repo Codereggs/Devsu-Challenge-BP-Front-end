@@ -17,14 +17,7 @@
     "jsx": "react-jsx",
     "baseUrl": "./",
     "paths": {
-      "@src/*": ["src/*"],
-      "@components/*": ["src/components/*"],
-      "@atoms/*": ["src/components/atoms/*"],
-      "@molecules/*": ["src/components/molecules/*"],
-      "@organism/*": ["src/components/organism/*"],
-      "@test/*": ["src/test/*"],
-      "@assets/*": ["src/assets/*"],
-      "@features/*": ["src/features/*"]
+      "@src/*": ["src/*"]
     }
   },
   "include": ["src"]
