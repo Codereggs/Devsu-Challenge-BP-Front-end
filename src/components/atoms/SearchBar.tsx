@@ -3,8 +3,8 @@ import debounce from "lodash/debounce";
 import { AiOutlinePlus } from "react-icons/ai";
 import { BiSearch } from "react-icons/bi";
 
-import { SearchBarProps } from "@src/features/interfaces/pokemons.interface";
-import { getPokemons } from "@src/features/request/service";
+import { SearchBarProps } from "../../features/interfaces/pokemons.interface";
+import { getPokemons } from "../../features/request/service";
 import CustomizedButton from "./CustomizedButton";
 
 const SearchBar: React.FC<SearchBarProps> = ({ showEdit, setPokemonList }) => {

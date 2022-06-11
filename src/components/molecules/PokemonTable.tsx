@@ -1,5 +1,5 @@
-import { PokemonTableProps } from "@src/features/interfaces/pokemons.interface";
-import { deletePokemon } from "@src/features/request/service";
+import { PokemonTableProps } from "../../features/interfaces/pokemons.interface";
+import { deletePokemon } from "../../features/request/service";
 
 import { AiOutlineEdit } from "react-icons/ai";
 import { MdDeleteForever } from "react-icons/md";

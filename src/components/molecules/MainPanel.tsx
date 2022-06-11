@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-import { MainPanelProps } from "@src/features/interfaces/pokemons.interface";
-import CustomizedButton from "@src/components/atoms/CustomizedButton";
-import { savePokemon, updatePokemon } from "@src/features/request/service";
+import { MainPanelProps } from "../../features/interfaces/pokemons.interface";
+import CustomizedButton from "../../components/atoms/CustomizedButton";
+import { savePokemon, updatePokemon } from "../../features/request/service";
 
 import { AiOutlineClose, AiOutlineSave } from "react-icons/ai";
 

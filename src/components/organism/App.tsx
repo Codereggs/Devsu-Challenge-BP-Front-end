@@ -2,10 +2,10 @@ import "../../assets/App.css";
 
 import { useEffect, useState } from "react";
 
-import { getPokemons, getQuantity } from "@src/features/request/service";
-import SearchBar from "@src/components/atoms/SearchBar";
-import PokemonTable from "@src/components/molecules/PokemonTable";
-import MainPanel from "@src/components/molecules/MainPanel";
+import { getPokemons, getQuantity } from "../../features/request/service";
+import SearchBar from "../../components/atoms/SearchBar";
+import PokemonTable from "../../components/molecules/PokemonTable";
+import MainPanel from "../../components/molecules/MainPanel";
 
 function App() {
   const [pokemonList, setPokemonList] = useState<any>([]);
